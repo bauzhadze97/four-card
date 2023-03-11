@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    --red:#EA5454;
+    --blue:#44D3D2;
+    --orange:#FCAE4A;
+    --blue2:#549EF2;
+    --black:#4D4F62;
+    --bg:#FAFAFA;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins';
+    background-color: var(--bg);
+}
+main {
+    width: 100%;
+}
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 85px 40px 76px 40px;
+}
+header h1{
+    font-size:22px;
+    color: #4D4F62;
+    font-weight: 275;
+}
+header h2{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--black);
+}
+header p{
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 0.5;
+    text-align: center;
+    max-width: 311px;
+}
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 32px 0 32px;
+}
+section .card {
+    background-color: #FFFFFF;
+    box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+    border-radius: 8px;
+    margin-bottom: 25px;
+    max-width: 312px;
+}
+section .card .cardtop{
+    width: 100%;
+    min-height: 3.75px;
+    box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+    border-radius: 9px 9px 0 0;
+}
+section .card h2{
+    font-weight: 600;
+    font-size: 20px;
+    padding: 27px 0px 0 28px;
+    color: var(--black);
+}
+section .card p{
+    font-weight: 400;
+    font-size: 13px;
+    opacity: 0.5;
+    padding: 0 29px 33px 29px;
+}
+section .card img{
+    padding: 0 28px 28px 70%;
+}
+.team {background: var(--red);}
+.supervisior {background:var(--blue);}
+.karma {background:var(--orange);}
+.calculator {background: var(--blue2);}
+@media  screen and (min-width:768px) {
+    section .card{
+        max-width: 350px;
+    }
+    header p{
+        max-width: 350px;
+    }
+}
+@media  screen and (min-width:1440px){
+    section {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .gap {
+        margin-right:50px;
+        margin-left: 50px;
+    }
+    header p{
+        max-width: 540px;
+
+    }
+}
